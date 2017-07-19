@@ -1,0 +1,52 @@
+# InlineResponse200
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**match_id** | **float** | match_id | [optional] 
+**barracks_status_dire** | **float** | barracks_status_dire | [optional] 
+**barracks_status_radiant** | **float** | barracks_status_radiant | [optional] 
+**chat** | **object** | chat | [optional] 
+**cluster** | **float** | cluster | [optional] 
+**cosmetics** | **object** | cosmetics | [optional] 
+**dire_score** | **float** | dire_score | [optional] 
+**duration** | **float** | duration | [optional] 
+**engine** | **float** | engine | [optional] 
+**first_blood_time** | **float** | first_blood_time | [optional] 
+**game_mode** | **float** | game_mode | [optional] 
+**human_players** | **float** | human_players | [optional] 
+**leagueid** | **float** | leagueid | [optional] 
+**lobby_type** | **float** | lobby_type | [optional] 
+**match_seq_num** | **float** | match_seq_num | [optional] 
+**negative_votes** | **float** | negative_votes | [optional] 
+**objectives** | **object** | objectives | [optional] 
+**picks_bans** | **object** | picks_bans | [optional] 
+**positive_votes** | **float** | positive_votes | [optional] 
+**radiant_gold_adv** | **object** | radiant_gold_adv | [optional] 
+**radiant_score** | **float** | radiant_score | [optional] 
+**radiant_win** | **bool** | radiant_win | [optional] 
+**radiant_xp_adv** | **object** | radiant_xp_adv | [optional] 
+**start_time** | **float** | start_time | [optional] 
+**teamfights** | **object** | teamfights | [optional] 
+**tower_status_dire** | **float** | tower_status_dire | [optional] 
+**tower_status_radiant** | **float** | tower_status_radiant | [optional] 
+**version** | **float** | version | [optional] 
+**replay_salt** | **float** | replay_salt | [optional] 
+**series_id** | **float** | series_id | [optional] 
+**series_type** | **float** | series_type | [optional] 
+**radiant_team** | **object** | radiant_team | [optional] 
+**dire_team** | **object** | dire_team | [optional] 
+**league** | **object** | league | [optional] 
+**skill** | **float** | skill | [optional] 
+**players** | [**list[InlineResponse200Players]**](InlineResponse200Players.md) | players | [optional] 
+**patch** | **float** | patch | [optional] 
+**region** | **float** | region | [optional] 
+**all_word_counts** | **object** | all_word_counts | [optional] 
+**my_word_counts** | **object** | my_word_counts | [optional] 
+**throw** | **float** | throw | [optional] 
+**loss** | **float** | loss | [optional] 
+**replay_url** | **str** | replay_url | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
