@@ -6,7 +6,6 @@ What I do:
 ```sh
 wget http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.2.3/swagger-codegen-cli-2.2.3.jar -O swagger-codegen-cli.jar
 java -jar swagger-codegen-cli.jar generate -i https://api.opendota.com/api -l python -o /tmp/od-python/ --git-repo-id od-python --git-user-id seraphli --config config.json
-
 ```
 
 # Introduction This API provides Dota 2 related data. Please keep request rate to approximately 3/s. 
@@ -33,7 +32,7 @@ pip install git+https://github.com/seraphli/od-python.git
 
 Then import the package:
 ```python
-import swagger_client 
+import od_python 
 ```
 
 ### Setuptools
@@ -47,7 +46,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import swagger_client
+import od_python
 ```
 
 ## Getting Started
@@ -57,11 +56,11 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 # create an instance of the API class
-api_instance = swagger_client.BenchmarksApi()
+api_instance = od_python.BenchmarksApi()
 hero_id = 'hero_id_example' # str | Hero ID
 
 try:
