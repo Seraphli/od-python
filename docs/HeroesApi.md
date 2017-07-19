@@ -1,4 +1,4 @@
-# swagger_client.HeroesApi
+# od_python.HeroesApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Get hero data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.HeroesApi()
+api_instance = od_python.HeroesApi()
 
 try: 
     # GET /heroes

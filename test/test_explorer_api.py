@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.explorer_api import ExplorerApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.explorer_api import ExplorerApi
 
 
 class TestExplorerApi(unittest.TestCase):
     """ ExplorerApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.explorer_api.ExplorerApi()
+        self.api = od_python.apis.explorer_api.ExplorerApi()
 
     def tearDown(self):
         pass

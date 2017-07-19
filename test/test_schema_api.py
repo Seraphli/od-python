@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.schema_api import SchemaApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.schema_api import SchemaApi
 
 
 class TestSchemaApi(unittest.TestCase):
     """ SchemaApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.schema_api.SchemaApi()
+        self.api = od_python.apis.schema_api.SchemaApi()
 
     def tearDown(self):
         pass

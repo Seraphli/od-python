@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.distributions_api import DistributionsApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.distributions_api import DistributionsApi
 
 
 class TestDistributionsApi(unittest.TestCase):
     """ DistributionsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.distributions_api.DistributionsApi()
+        self.api = od_python.apis.distributions_api.DistributionsApi()
 
     def tearDown(self):
         pass

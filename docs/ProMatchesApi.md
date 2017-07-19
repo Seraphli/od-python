@@ -1,4 +1,4 @@
-# swagger_client.ProMatchesApi
+# od_python.ProMatchesApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Get list of pro matches
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProMatchesApi()
+api_instance = od_python.ProMatchesApi()
 less_than_match_id = 56 # int | Get matches with a match ID lower than this value (optional)
 
 try: 

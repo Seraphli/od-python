@@ -1,4 +1,4 @@
-# swagger_client.PublicMatchesApi
+# od_python.PublicMatchesApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Get list of randomly sampled public matches
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PublicMatchesApi()
+api_instance = od_python.PublicMatchesApi()
 mmr_ascending = 56 # int | Order by MMR ascending (optional)
 mmr_descending = 56 # int | Order by MMR descending (optional)
 less_than_match_id = 56 # int | Get matches with a match ID lower than this value (optional)

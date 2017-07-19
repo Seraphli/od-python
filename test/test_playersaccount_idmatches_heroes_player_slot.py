@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.playersaccount_idmatches_heroes_player_slot import PlayersaccountIdmatchesHeroesPlayerSlot
+import od_python
+from od_python.rest import ApiException
+from od_python.models.playersaccount_idmatches_heroes_player_slot import PlayersaccountIdmatchesHeroesPlayerSlot
 
 
 class TestPlayersaccountIdmatchesHeroesPlayerSlot(unittest.TestCase):
@@ -36,7 +36,7 @@ class TestPlayersaccountIdmatchesHeroesPlayerSlot(unittest.TestCase):
         Test PlayersaccountIdmatchesHeroesPlayerSlot
         """
         # FIXME: construct object with mandatory attributes with example values
-        #model = swagger_client.models.playersaccount_idmatches_heroes_player_slot.PlayersaccountIdmatchesHeroesPlayerSlot()
+        #model = od_python.models.playersaccount_idmatches_heroes_player_slot.PlayersaccountIdmatchesHeroesPlayerSlot()
         pass
 
 

@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.pro_players_api import ProPlayersApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.pro_players_api import ProPlayersApi
 
 
 class TestProPlayersApi(unittest.TestCase):
     """ ProPlayersApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.pro_players_api.ProPlayersApi()
+        self.api = od_python.apis.pro_players_api.ProPlayersApi()
 
     def tearDown(self):
         pass

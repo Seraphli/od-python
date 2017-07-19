@@ -1,4 +1,4 @@
-# swagger_client.ReplaysApi
+# od_python.ReplaysApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Get data to construct a replay URL with
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReplaysApi()
+api_instance = od_python.ReplaysApi()
 match_id = 56 # int | Match IDs (array)
 
 try: 

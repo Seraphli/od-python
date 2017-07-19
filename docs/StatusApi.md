@@ -1,4 +1,4 @@
-# swagger_client.StatusApi
+# od_python.StatusApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Get current service statistics
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.StatusApi()
+api_instance = od_python.StatusApi()
 
 try: 
     # GET /status

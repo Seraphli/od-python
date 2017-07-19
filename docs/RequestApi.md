@@ -1,4 +1,4 @@
-# swagger_client.RequestApi
+# od_python.RequestApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -19,12 +19,12 @@ Get parse request state
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RequestApi()
+api_instance = od_python.RequestApi()
 job_id = 'job_id_example' # str | The job ID to query.
 
 try: 
@@ -67,12 +67,12 @@ Submit a new parse request
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RequestApi()
+api_instance = od_python.RequestApi()
 match_id = 56 # int | 
 
 try: 

@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.health_api import HealthApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.health_api import HealthApi
 
 
 class TestHealthApi(unittest.TestCase):
     """ HealthApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.health_api.HealthApi()
+        self.api = od_python.apis.health_api.HealthApi()
 
     def tearDown(self):
         pass

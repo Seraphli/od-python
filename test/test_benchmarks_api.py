@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.benchmarks_api import BenchmarksApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.benchmarks_api import BenchmarksApi
 
 
 class TestBenchmarksApi(unittest.TestCase):
     """ BenchmarksApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.benchmarks_api.BenchmarksApi()
+        self.api = od_python.apis.benchmarks_api.BenchmarksApi()
 
     def tearDown(self):
         pass

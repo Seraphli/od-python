@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.inline_response_200_21_result_gold_per_min import InlineResponse20021ResultGoldPerMin
+import od_python
+from od_python.rest import ApiException
+from od_python.models.inline_response_200_21_result_gold_per_min import InlineResponse20021ResultGoldPerMin
 
 
 class TestInlineResponse20021ResultGoldPerMin(unittest.TestCase):
@@ -36,7 +36,7 @@ class TestInlineResponse20021ResultGoldPerMin(unittest.TestCase):
         Test InlineResponse20021ResultGoldPerMin
         """
         # FIXME: construct object with mandatory attributes with example values
-        #model = swagger_client.models.inline_response_200_21_result_gold_per_min.InlineResponse20021ResultGoldPerMin()
+        #model = od_python.models.inline_response_200_21_result_gold_per_min.InlineResponse20021ResultGoldPerMin()
         pass
 
 

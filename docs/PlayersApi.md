@@ -1,4 +1,4 @@
-# swagger_client.PlayersApi
+# od_python.PlayersApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -32,12 +32,12 @@ Counts in categories
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -114,12 +114,12 @@ Player data
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 
 try: 
@@ -162,12 +162,12 @@ Heroes played
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -244,12 +244,12 @@ Distribution of matches in a single stat
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 field = 'field_example' # str | Field to aggregate on
 limit = 56 # int | Number of matches to limit to (optional)
@@ -328,12 +328,12 @@ Matches played
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -412,12 +412,12 @@ Players played with
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -494,12 +494,12 @@ Pro players played with
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -576,12 +576,12 @@ Player hero rankings
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 
 try: 
@@ -624,12 +624,12 @@ Player rating history
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 
 try: 
@@ -672,12 +672,12 @@ Recent matches played
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 
 try: 
     # GET /players/{account_id}/recentMatches
@@ -716,12 +716,12 @@ Refresh player match history
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 
 try: 
@@ -764,12 +764,12 @@ Totals in stats
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -846,12 +846,12 @@ Wards placed in matches played
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -928,12 +928,12 @@ Win/Loss count
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)
@@ -1010,12 +1010,12 @@ Words said/read in matches played
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PlayersApi()
+api_instance = od_python.PlayersApi()
 account_id = 56 # int | Steam32 account ID
 limit = 56 # int | Number of matches to limit to (optional)
 offset = 56 # int | Number of matches to offset start by (optional)

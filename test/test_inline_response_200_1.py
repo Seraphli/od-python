@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.inline_response_200_1 import InlineResponse2001
+import od_python
+from od_python.rest import ApiException
+from od_python.models.inline_response_200_1 import InlineResponse2001
 
 
 class TestInlineResponse2001(unittest.TestCase):
@@ -36,7 +36,7 @@ class TestInlineResponse2001(unittest.TestCase):
         Test InlineResponse2001
         """
         # FIXME: construct object with mandatory attributes with example values
-        #model = swagger_client.models.inline_response_200_1.InlineResponse2001()
+        #model = od_python.models.inline_response_200_1.InlineResponse2001()
         pass
 
 

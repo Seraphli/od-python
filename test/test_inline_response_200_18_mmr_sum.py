@@ -17,9 +17,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.inline_response_200_18_mmr_sum import InlineResponse20018MmrSum
+import od_python
+from od_python.rest import ApiException
+from od_python.models.inline_response_200_18_mmr_sum import InlineResponse20018MmrSum
 
 
 class TestInlineResponse20018MmrSum(unittest.TestCase):
@@ -36,7 +36,7 @@ class TestInlineResponse20018MmrSum(unittest.TestCase):
         Test InlineResponse20018MmrSum
         """
         # FIXME: construct object with mandatory attributes with example values
-        #model = swagger_client.models.inline_response_200_18_mmr_sum.InlineResponse20018MmrSum()
+        #model = od_python.models.inline_response_200_18_mmr_sum.InlineResponse20018MmrSum()
         pass
 
 

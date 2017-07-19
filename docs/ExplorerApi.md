@@ -1,4 +1,4 @@
-# swagger_client.ExplorerApi
+# od_python.ExplorerApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Submit arbitrary SQL queries to the database
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ExplorerApi()
+api_instance = od_python.ExplorerApi()
 sql = 'sql_example' # str | The PostgreSQL query as percent-encoded string. (optional)
 
 try: 

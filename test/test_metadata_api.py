@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.metadata_api import MetadataApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.metadata_api import MetadataApi
 
 
 class TestMetadataApi(unittest.TestCase):
     """ MetadataApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.metadata_api.MetadataApi()
+        self.api = od_python.apis.metadata_api.MetadataApi()
 
     def tearDown(self):
         pass

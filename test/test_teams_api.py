@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.teams_api import TeamsApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.teams_api import TeamsApi
 
 
 class TestTeamsApi(unittest.TestCase):
     """ TeamsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.teams_api.TeamsApi()
+        self.api = od_python.apis.teams_api.TeamsApi()
 
     def tearDown(self):
         pass

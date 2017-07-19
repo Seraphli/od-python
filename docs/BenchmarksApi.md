@@ -1,4 +1,4 @@
-# swagger_client.BenchmarksApi
+# od_python.BenchmarksApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Benchmarks of average stat values for a hero
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.BenchmarksApi()
+api_instance = od_python.BenchmarksApi()
 hero_id = 'hero_id_example' # str | Hero ID
 
 try: 

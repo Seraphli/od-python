@@ -1,4 +1,4 @@
-# swagger_client.SearchApi
+# od_python.SearchApi
 
 All URIs are relative to *https://api.opendota.com/api*
 
@@ -18,12 +18,12 @@ Search players by personaname. Default similarity is 0.51
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import od_python
+from od_python.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SearchApi()
+api_instance = od_python.SearchApi()
 q = 'q_example' # str | Search string
 similarity = 3.4 # float | Minimum similarity threshold, between 0 and 1 (optional)
 

@@ -17,16 +17,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.hero_stats_api import HeroStatsApi
+import od_python
+from od_python.rest import ApiException
+from od_python.apis.hero_stats_api import HeroStatsApi
 
 
 class TestHeroStatsApi(unittest.TestCase):
     """ HeroStatsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.hero_stats_api.HeroStatsApi()
+        self.api = od_python.apis.hero_stats_api.HeroStatsApi()
 
     def tearDown(self):
         pass
