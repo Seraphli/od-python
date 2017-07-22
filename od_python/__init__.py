@@ -54,7 +54,11 @@ from .models.inline_response_200_6 import InlineResponse2006
 from .models.inline_response_200_7 import InlineResponse2007
 from .models.inline_response_200_8 import InlineResponse2008
 from .models.inline_response_200_9 import InlineResponse2009
+from .models.inline_response_200_buyback_log import InlineResponse200BuybackLog
+from .models.inline_response_200_chat import InlineResponse200Chat
+from .models.inline_response_200_kills_log import InlineResponse200KillsLog
 from .models.inline_response_200_players import InlineResponse200Players
+from .models.inline_response_200_runes_log import InlineResponse200RunesLog
 from .models.playersaccount_idmatches_heroes import PlayersaccountIdmatchesHeroes
 from .models.playersaccount_idmatches_heroes_player_slot import PlayersaccountIdmatchesHeroesPlayerSlot
 

@@ -34,7 +34,7 @@ class InlineResponse200(object):
         'match_id': 'float',
         'barracks_status_dire': 'float',
         'barracks_status_radiant': 'float',
-        'chat': 'object',
+        'chat': 'list[InlineResponse200Chat]',
         'cluster': 'float',
         'cosmetics': 'object',
         'dire_score': 'float',
@@ -334,7 +334,7 @@ class InlineResponse200(object):
         chat
 
         :return: The chat of this InlineResponse200.
-        :rtype: object
+        :rtype: list[InlineResponse200Chat]
         """
         return self._chat
 
@@ -345,7 +345,7 @@ class InlineResponse200(object):
         chat
 
         :param chat: The chat of this InlineResponse200.
-        :type: object
+        :type: list[InlineResponse200Chat]
         """
 
         self._chat = chat

@@ -46,7 +46,8 @@ class InlineResponse2003(object):
         'skill': 'float',
         'lane': 'float',
         'lane_role': 'float',
-        'is_roaming': 'bool'
+        'is_roaming': 'bool',
+        'cluster': 'int'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class InlineResponse2003(object):
         'skill': 'skill',
         'lane': 'lane',
         'lane_role': 'lane_role',
-        'is_roaming': 'is_roaming'
+        'is_roaming': 'is_roaming',
+        'cluster': 'cluster'
     }
 
-    def __init__(self, match_id=None, player_slot=None, radiant_win=None, duration=None, game_mode=None, lobby_type=None, hero_id=None, start_time=None, version=None, kills=None, deaths=None, assists=None, skill=None, lane=None, lane_role=None, is_roaming=None):
+    def __init__(self, match_id=None, player_slot=None, radiant_win=None, duration=None, game_mode=None, lobby_type=None, hero_id=None, start_time=None, version=None, kills=None, deaths=None, assists=None, skill=None, lane=None, lane_role=None, is_roaming=None, cluster=None):
         """
         InlineResponse2003 - a model defined in Swagger
         """
@@ -89,6 +91,7 @@ class InlineResponse2003(object):
         self._lane = None
         self._lane_role = None
         self._is_roaming = None
+        self._cluster = None
 
         if match_id is not None:
           self.match_id = match_id
@@ -122,6 +125,8 @@ class InlineResponse2003(object):
           self.lane_role = lane_role
         if is_roaming is not None:
           self.is_roaming = is_roaming
+        if cluster is not None:
+          self.cluster = cluster
 
     @property
     def match_id(self):
@@ -490,6 +495,29 @@ class InlineResponse2003(object):
         """
 
         self._is_roaming = is_roaming
+
+    @property
+    def cluster(self):
+        """
+        Gets the cluster of this InlineResponse2003.
+        cluster
+
+        :return: The cluster of this InlineResponse2003.
+        :rtype: int
+        """
+        return self._cluster
+
+    @cluster.setter
+    def cluster(self, cluster):
+        """
+        Sets the cluster of this InlineResponse2003.
+        cluster
+
+        :param cluster: The cluster of this InlineResponse2003.
+        :type: int
+        """
+
+        self._cluster = cluster
 
     def to_dict(self):
         """

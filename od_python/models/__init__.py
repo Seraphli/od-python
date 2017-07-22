@@ -54,6 +54,10 @@ from .inline_response_200_6 import InlineResponse2006
 from .inline_response_200_7 import InlineResponse2007
 from .inline_response_200_8 import InlineResponse2008
 from .inline_response_200_9 import InlineResponse2009
+from .inline_response_200_buyback_log import InlineResponse200BuybackLog
+from .inline_response_200_chat import InlineResponse200Chat
+from .inline_response_200_kills_log import InlineResponse200KillsLog
 from .inline_response_200_players import InlineResponse200Players
+from .inline_response_200_runes_log import InlineResponse200RunesLog
 from .playersaccount_idmatches_heroes import PlayersaccountIdmatchesHeroes
 from .playersaccount_idmatches_heroes_player_slot import PlayersaccountIdmatchesHeroesPlayerSlot

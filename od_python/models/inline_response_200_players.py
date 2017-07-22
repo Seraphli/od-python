@@ -33,7 +33,7 @@ class InlineResponse200Players(object):
     swagger_types = {
         'match_id': 'float',
         'player_slot': 'float',
-        'ability_upgrades_arr': 'list[ERRORUNKNOWN]',
+        'ability_upgrades_arr': 'list[int]',
         'ability_uses': 'object',
         'account_id': 'float',
         'actions': 'object',
@@ -42,7 +42,7 @@ class InlineResponse200Players(object):
         'backpack_0': 'float',
         'backpack_1': 'float',
         'backpack_2': 'float',
-        'buyback_log': 'list[ERRORUNKNOWN]',
+        'buyback_log': 'list[InlineResponse200BuybackLog]',
         'camps_stacked': 'float',
         'creeps_stacked': 'float',
         'damage': 'object',
@@ -51,12 +51,12 @@ class InlineResponse200Players(object):
         'damage_taken': 'object',
         'deaths': 'float',
         'denies': 'float',
-        'dn_t': 'list[ERRORUNKNOWN]',
+        'dn_t': 'list[int]',
         'gold': 'float',
         'gold_per_min': 'float',
         'gold_reasons': 'object',
         'gold_spent': 'float',
-        'gold_t': 'list[ERRORUNKNOWN]',
+        'gold_t': 'list[int]',
         'hero_damage': 'float',
         'hero_healing': 'float',
         'hero_hits': 'object',
@@ -72,37 +72,37 @@ class InlineResponse200Players(object):
         'killed': 'object',
         'killed_by': 'object',
         'kills': 'float',
-        'kills_log': 'list[ERRORUNKNOWN]',
+        'kills_log': 'list[InlineResponse200KillsLog]',
         'lane_pos': 'object',
         'last_hits': 'float',
         'leaver_status': 'float',
         'level': 'float',
-        'lh_t': 'list[ERRORUNKNOWN]',
+        'lh_t': 'list[int]',
         'life_state': 'object',
         'max_hero_hit': 'object',
         'multi_kills': 'object',
         'obs': 'object',
-        'obs_left_log': 'list[ERRORUNKNOWN]',
-        'obs_log': 'list[ERRORUNKNOWN]',
+        'obs_left_log': 'list[object]',
+        'obs_log': 'list[object]',
         'obs_placed': 'float',
         'party_id': 'float',
-        'permanent_buffs': 'list[ERRORUNKNOWN]',
+        'permanent_buffs': 'list[object]',
         'pings': 'float',
         'purchase': 'object',
-        'purchase_log': 'list[ERRORUNKNOWN]',
+        'purchase_log': 'list[InlineResponse200KillsLog]',
         'rune_pickups': 'float',
-        'runes': 'object',
-        'runes_log': 'list[ERRORUNKNOWN]',
+        'runes': 'list[dict(str, str)]',
+        'runes_log': 'list[InlineResponse200RunesLog]',
         'sen': 'object',
-        'sen_left_log': 'list[ERRORUNKNOWN]',
-        'sen_log': 'list[ERRORUNKNOWN]',
+        'sen_left_log': 'list[object]',
+        'sen_log': 'list[object]',
         'sen_placed': 'float',
         'stuns': 'float',
-        'times': 'list[ERRORUNKNOWN]',
+        'times': 'list[int]',
         'tower_damage': 'float',
         'xp_per_min': 'float',
         'xp_reasons': 'object',
-        'xp_t': 'list[ERRORUNKNOWN]',
+        'xp_t': 'list[int]',
         'personaname': 'str',
         'name': 'str',
         'radiant_win': 'bool',
@@ -147,7 +147,7 @@ class InlineResponse200Players(object):
         'actions_per_min': 'float',
         'life_state_dead': 'float',
         'solo_competitive_rank': 'str',
-        'cosmetics': 'list[ERRORUNKNOWN]',
+        'cosmetics': 'list[int]',
         'benchmarks': 'object'
     }
 
@@ -686,7 +686,7 @@ class InlineResponse200Players(object):
         ability_upgrades_arr
 
         :return: The ability_upgrades_arr of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[int]
         """
         return self._ability_upgrades_arr
 
@@ -697,7 +697,7 @@ class InlineResponse200Players(object):
         ability_upgrades_arr
 
         :param ability_upgrades_arr: The ability_upgrades_arr of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[int]
         """
 
         self._ability_upgrades_arr = ability_upgrades_arr
@@ -893,7 +893,7 @@ class InlineResponse200Players(object):
         buyback_log
 
         :return: The buyback_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[InlineResponse200BuybackLog]
         """
         return self._buyback_log
 
@@ -904,7 +904,7 @@ class InlineResponse200Players(object):
         buyback_log
 
         :param buyback_log: The buyback_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[InlineResponse200BuybackLog]
         """
 
         self._buyback_log = buyback_log
@@ -1100,7 +1100,7 @@ class InlineResponse200Players(object):
         dn_t
 
         :return: The dn_t of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[int]
         """
         return self._dn_t
 
@@ -1111,7 +1111,7 @@ class InlineResponse200Players(object):
         dn_t
 
         :param dn_t: The dn_t of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[int]
         """
 
         self._dn_t = dn_t
@@ -1215,7 +1215,7 @@ class InlineResponse200Players(object):
         gold_t
 
         :return: The gold_t of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[int]
         """
         return self._gold_t
 
@@ -1226,7 +1226,7 @@ class InlineResponse200Players(object):
         gold_t
 
         :param gold_t: The gold_t of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[int]
         """
 
         self._gold_t = gold_t
@@ -1583,7 +1583,7 @@ class InlineResponse200Players(object):
         kills_log
 
         :return: The kills_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[InlineResponse200KillsLog]
         """
         return self._kills_log
 
@@ -1594,7 +1594,7 @@ class InlineResponse200Players(object):
         kills_log
 
         :param kills_log: The kills_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[InlineResponse200KillsLog]
         """
 
         self._kills_log = kills_log
@@ -1698,7 +1698,7 @@ class InlineResponse200Players(object):
         lh_t
 
         :return: The lh_t of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[int]
         """
         return self._lh_t
 
@@ -1709,7 +1709,7 @@ class InlineResponse200Players(object):
         lh_t
 
         :param lh_t: The lh_t of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[int]
         """
 
         self._lh_t = lh_t
@@ -1813,7 +1813,7 @@ class InlineResponse200Players(object):
         obs_left_log
 
         :return: The obs_left_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[object]
         """
         return self._obs_left_log
 
@@ -1824,7 +1824,7 @@ class InlineResponse200Players(object):
         obs_left_log
 
         :param obs_left_log: The obs_left_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[object]
         """
 
         self._obs_left_log = obs_left_log
@@ -1836,7 +1836,7 @@ class InlineResponse200Players(object):
         obs_log
 
         :return: The obs_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[object]
         """
         return self._obs_log
 
@@ -1847,7 +1847,7 @@ class InlineResponse200Players(object):
         obs_log
 
         :param obs_log: The obs_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[object]
         """
 
         self._obs_log = obs_log
@@ -1905,7 +1905,7 @@ class InlineResponse200Players(object):
         permanent_buffs
 
         :return: The permanent_buffs of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[object]
         """
         return self._permanent_buffs
 
@@ -1916,7 +1916,7 @@ class InlineResponse200Players(object):
         permanent_buffs
 
         :param permanent_buffs: The permanent_buffs of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[object]
         """
 
         self._permanent_buffs = permanent_buffs
@@ -1974,7 +1974,7 @@ class InlineResponse200Players(object):
         purchase_log
 
         :return: The purchase_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[InlineResponse200KillsLog]
         """
         return self._purchase_log
 
@@ -1985,7 +1985,7 @@ class InlineResponse200Players(object):
         purchase_log
 
         :param purchase_log: The purchase_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[InlineResponse200KillsLog]
         """
 
         self._purchase_log = purchase_log
@@ -2020,7 +2020,7 @@ class InlineResponse200Players(object):
         runes
 
         :return: The runes of this InlineResponse200Players.
-        :rtype: object
+        :rtype: list[dict(str, str)]
         """
         return self._runes
 
@@ -2031,7 +2031,7 @@ class InlineResponse200Players(object):
         runes
 
         :param runes: The runes of this InlineResponse200Players.
-        :type: object
+        :type: list[dict(str, str)]
         """
 
         self._runes = runes
@@ -2043,7 +2043,7 @@ class InlineResponse200Players(object):
         runes_log
 
         :return: The runes_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[InlineResponse200RunesLog]
         """
         return self._runes_log
 
@@ -2054,7 +2054,7 @@ class InlineResponse200Players(object):
         runes_log
 
         :param runes_log: The runes_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[InlineResponse200RunesLog]
         """
 
         self._runes_log = runes_log
@@ -2089,7 +2089,7 @@ class InlineResponse200Players(object):
         sen_left_log
 
         :return: The sen_left_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[object]
         """
         return self._sen_left_log
 
@@ -2100,7 +2100,7 @@ class InlineResponse200Players(object):
         sen_left_log
 
         :param sen_left_log: The sen_left_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[object]
         """
 
         self._sen_left_log = sen_left_log
@@ -2112,7 +2112,7 @@ class InlineResponse200Players(object):
         sen_log
 
         :return: The sen_log of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[object]
         """
         return self._sen_log
 
@@ -2123,7 +2123,7 @@ class InlineResponse200Players(object):
         sen_log
 
         :param sen_log: The sen_log of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[object]
         """
 
         self._sen_log = sen_log
@@ -2181,7 +2181,7 @@ class InlineResponse200Players(object):
         times
 
         :return: The times of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[int]
         """
         return self._times
 
@@ -2192,7 +2192,7 @@ class InlineResponse200Players(object):
         times
 
         :param times: The times of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[int]
         """
 
         self._times = times
@@ -2273,7 +2273,7 @@ class InlineResponse200Players(object):
         xp_t
 
         :return: The xp_t of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[int]
         """
         return self._xp_t
 
@@ -2284,7 +2284,7 @@ class InlineResponse200Players(object):
         xp_t
 
         :param xp_t: The xp_t of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[int]
         """
 
         self._xp_t = xp_t
@@ -3308,7 +3308,7 @@ class InlineResponse200Players(object):
         cosmetics
 
         :return: The cosmetics of this InlineResponse200Players.
-        :rtype: list[ERRORUNKNOWN]
+        :rtype: list[int]
         """
         return self._cosmetics
 
@@ -3319,7 +3319,7 @@ class InlineResponse200Players(object):
         cosmetics
 
         :param cosmetics: The cosmetics of this InlineResponse200Players.
-        :type: list[ERRORUNKNOWN]
+        :type: list[int]
         """
 
         self._cosmetics = cosmetics

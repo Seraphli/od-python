@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **lane** | **float** | lane | [optional] 
 **lane_role** | **float** | lane_role | [optional] 
 **is_roaming** | **bool** | is_roaming | [optional] 
+**cluster** | **int** | cluster | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

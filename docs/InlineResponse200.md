@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **match_id** | **float** | match_id | [optional] 
 **barracks_status_dire** | **float** | barracks_status_dire | [optional] 
 **barracks_status_radiant** | **float** | barracks_status_radiant | [optional] 
-**chat** | **object** | chat | [optional] 
+**chat** | [**list[InlineResponse200Chat]**](InlineResponse200Chat.md) | chat | [optional] 
 **cluster** | **float** | cluster | [optional] 
 **cosmetics** | **object** | cosmetics | [optional] 
 **dire_score** | **float** | dire_score | [optional] 
