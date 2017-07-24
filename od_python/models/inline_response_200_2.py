@@ -31,8 +31,8 @@ class InlineResponse2002(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'win': 'float',
-        'lose': 'float'
+        'win': 'int',
+        'lose': 'int'
     }
 
     attribute_map = {
@@ -60,7 +60,7 @@ class InlineResponse2002(object):
         win
 
         :return: The win of this InlineResponse2002.
-        :rtype: float
+        :rtype: int
         """
         return self._win
 
@@ -71,7 +71,7 @@ class InlineResponse2002(object):
         win
 
         :param win: The win of this InlineResponse2002.
-        :type: float
+        :type: int
         """
 
         self._win = win
@@ -83,7 +83,7 @@ class InlineResponse2002(object):
         lose
 
         :return: The lose of this InlineResponse2002.
-        :rtype: float
+        :rtype: int
         """
         return self._lose
 
@@ -94,7 +94,7 @@ class InlineResponse2002(object):
         lose
 
         :param lose: The lose of this InlineResponse2002.
-        :type: float
+        :type: int
         """
 
         self._lose = lose

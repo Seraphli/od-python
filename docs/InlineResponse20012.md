@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_id** | **float** | account_id | [optional] 
-**match_id** | **float** | match_id | [optional] 
+**account_id** | **int** | account_id | [optional] 
+**match_id** | **int** | match_id | [optional] 
 **solo_competitive_rank** | **float** | solo_competitive_rank | [optional] 
 **competitive_rank** | **float** | competitive_rank | [optional] 
 

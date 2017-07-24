@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**match_id** | **float** | match_id | [optional] 
+**match_id** | **int** | match_id | [optional] 
 **duration** | **float** | duration | [optional] 
 **start_time** | **float** | start_time | [optional] 
 **radiant_team_id** | **float** | radiant_team_id | [optional] 

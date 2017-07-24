@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**match_id** | **float** | match_id | [optional] 
+**match_id** | **int** | match_id | [optional] 
 **cluster** | **float** | cluster | [optional] 
 **replay_salt** | **float** | replay_salt | [optional] 
 

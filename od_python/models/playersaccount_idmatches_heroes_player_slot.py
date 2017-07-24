@@ -31,9 +31,9 @@ class PlayersaccountIdmatchesHeroesPlayerSlot(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'account_id': 'float',
-        'hero_id': 'float',
-        'player_slot': 'float'
+        'account_id': 'int',
+        'hero_id': 'int',
+        'player_slot': 'int'
     }
 
     attribute_map = {
@@ -65,7 +65,7 @@ class PlayersaccountIdmatchesHeroesPlayerSlot(object):
         account_id
 
         :return: The account_id of this PlayersaccountIdmatchesHeroesPlayerSlot.
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -76,7 +76,7 @@ class PlayersaccountIdmatchesHeroesPlayerSlot(object):
         account_id
 
         :param account_id: The account_id of this PlayersaccountIdmatchesHeroesPlayerSlot.
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id
@@ -88,7 +88,7 @@ class PlayersaccountIdmatchesHeroesPlayerSlot(object):
         hero_id
 
         :return: The hero_id of this PlayersaccountIdmatchesHeroesPlayerSlot.
-        :rtype: float
+        :rtype: int
         """
         return self._hero_id
 
@@ -99,7 +99,7 @@ class PlayersaccountIdmatchesHeroesPlayerSlot(object):
         hero_id
 
         :param hero_id: The hero_id of this PlayersaccountIdmatchesHeroesPlayerSlot.
-        :type: float
+        :type: int
         """
 
         self._hero_id = hero_id
@@ -111,7 +111,7 @@ class PlayersaccountIdmatchesHeroesPlayerSlot(object):
         player_slot
 
         :return: The player_slot of this PlayersaccountIdmatchesHeroesPlayerSlot.
-        :rtype: float
+        :rtype: int
         """
         return self._player_slot
 
@@ -122,7 +122,7 @@ class PlayersaccountIdmatchesHeroesPlayerSlot(object):
         player_slot
 
         :param player_slot: The player_slot of this PlayersaccountIdmatchesHeroesPlayerSlot.
-        :type: float
+        :type: int
         """
 
         self._player_slot = player_slot

@@ -31,14 +31,14 @@ class InlineResponse2006(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'account_id': 'float',
-        'last_played': 'float',
-        'win': 'float',
-        'games': 'float',
-        'with_win': 'float',
-        'with_games': 'float',
-        'against_win': 'float',
-        'against_games': 'float',
+        'account_id': 'int',
+        'last_played': 'int',
+        'win': 'int',
+        'games': 'int',
+        'with_win': 'int',
+        'with_games': 'int',
+        'against_win': 'int',
+        'against_games': 'int',
         'with_gpm_sum': 'float',
         'with_xpm_sum': 'float',
         'personaname': 'str',
@@ -115,7 +115,7 @@ class InlineResponse2006(object):
         account_id
 
         :return: The account_id of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -126,7 +126,7 @@ class InlineResponse2006(object):
         account_id
 
         :param account_id: The account_id of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id
@@ -138,7 +138,7 @@ class InlineResponse2006(object):
         last_played
 
         :return: The last_played of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._last_played
 
@@ -149,7 +149,7 @@ class InlineResponse2006(object):
         last_played
 
         :param last_played: The last_played of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._last_played = last_played
@@ -161,7 +161,7 @@ class InlineResponse2006(object):
         win
 
         :return: The win of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._win
 
@@ -172,7 +172,7 @@ class InlineResponse2006(object):
         win
 
         :param win: The win of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._win = win
@@ -184,7 +184,7 @@ class InlineResponse2006(object):
         games
 
         :return: The games of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._games
 
@@ -195,7 +195,7 @@ class InlineResponse2006(object):
         games
 
         :param games: The games of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._games = games
@@ -207,7 +207,7 @@ class InlineResponse2006(object):
         with_win
 
         :return: The with_win of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._with_win
 
@@ -218,7 +218,7 @@ class InlineResponse2006(object):
         with_win
 
         :param with_win: The with_win of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._with_win = with_win
@@ -230,7 +230,7 @@ class InlineResponse2006(object):
         with_games
 
         :return: The with_games of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._with_games
 
@@ -241,7 +241,7 @@ class InlineResponse2006(object):
         with_games
 
         :param with_games: The with_games of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._with_games = with_games
@@ -253,7 +253,7 @@ class InlineResponse2006(object):
         against_win
 
         :return: The against_win of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._against_win
 
@@ -264,7 +264,7 @@ class InlineResponse2006(object):
         against_win
 
         :param against_win: The against_win of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._against_win = against_win
@@ -276,7 +276,7 @@ class InlineResponse2006(object):
         against_games
 
         :return: The against_games of this InlineResponse2006.
-        :rtype: float
+        :rtype: int
         """
         return self._against_games
 
@@ -287,7 +287,7 @@ class InlineResponse2006(object):
         against_games
 
         :param against_games: The against_games of this InlineResponse2006.
-        :type: float
+        :type: int
         """
 
         self._against_games = against_games

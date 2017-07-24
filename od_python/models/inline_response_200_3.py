@@ -31,18 +31,18 @@ class InlineResponse2003(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'match_id': 'float',
+        'match_id': 'int',
         'player_slot': 'float',
         'radiant_win': 'bool',
         'duration': 'float',
-        'game_mode': 'float',
-        'lobby_type': 'float',
-        'hero_id': 'float',
-        'start_time': 'float',
+        'game_mode': 'int',
+        'lobby_type': 'int',
+        'hero_id': 'int',
+        'start_time': 'int',
         'version': 'float',
-        'kills': 'float',
-        'deaths': 'float',
-        'assists': 'float',
+        'kills': 'int',
+        'deaths': 'int',
+        'assists': 'int',
         'skill': 'float',
         'lane': 'float',
         'lane_role': 'float',
@@ -135,7 +135,7 @@ class InlineResponse2003(object):
         match_id
 
         :return: The match_id of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._match_id
 
@@ -146,7 +146,7 @@ class InlineResponse2003(object):
         match_id
 
         :param match_id: The match_id of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._match_id = match_id
@@ -227,7 +227,7 @@ class InlineResponse2003(object):
         game_mode
 
         :return: The game_mode of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._game_mode
 
@@ -238,7 +238,7 @@ class InlineResponse2003(object):
         game_mode
 
         :param game_mode: The game_mode of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._game_mode = game_mode
@@ -250,7 +250,7 @@ class InlineResponse2003(object):
         lobby_type
 
         :return: The lobby_type of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._lobby_type
 
@@ -261,7 +261,7 @@ class InlineResponse2003(object):
         lobby_type
 
         :param lobby_type: The lobby_type of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._lobby_type = lobby_type
@@ -273,7 +273,7 @@ class InlineResponse2003(object):
         hero_id
 
         :return: The hero_id of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._hero_id
 
@@ -284,7 +284,7 @@ class InlineResponse2003(object):
         hero_id
 
         :param hero_id: The hero_id of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._hero_id = hero_id
@@ -296,7 +296,7 @@ class InlineResponse2003(object):
         start_time
 
         :return: The start_time of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._start_time
 
@@ -307,7 +307,7 @@ class InlineResponse2003(object):
         start_time
 
         :param start_time: The start_time of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._start_time = start_time
@@ -342,7 +342,7 @@ class InlineResponse2003(object):
         kills
 
         :return: The kills of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._kills
 
@@ -353,7 +353,7 @@ class InlineResponse2003(object):
         kills
 
         :param kills: The kills of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._kills = kills
@@ -365,7 +365,7 @@ class InlineResponse2003(object):
         deaths
 
         :return: The deaths of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._deaths
 
@@ -376,7 +376,7 @@ class InlineResponse2003(object):
         deaths
 
         :param deaths: The deaths of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._deaths = deaths
@@ -388,7 +388,7 @@ class InlineResponse2003(object):
         assists
 
         :return: The assists of this InlineResponse2003.
-        :rtype: float
+        :rtype: int
         """
         return self._assists
 
@@ -399,7 +399,7 @@ class InlineResponse2003(object):
         assists
 
         :param assists: The assists of this InlineResponse2003.
-        :type: float
+        :type: int
         """
 
         self._assists = assists

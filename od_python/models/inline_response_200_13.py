@@ -31,7 +31,7 @@ class InlineResponse20013(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'account_id': 'float',
+        'account_id': 'int',
         'steamid': 'str',
         'avatar': 'str',
         'avatarmedium': 'str',
@@ -145,7 +145,7 @@ class InlineResponse20013(object):
         account_id
 
         :return: The account_id of this InlineResponse20013.
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -156,7 +156,7 @@ class InlineResponse20013(object):
         account_id
 
         :param account_id: The account_id of this InlineResponse20013.
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id

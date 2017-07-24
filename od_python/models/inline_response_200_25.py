@@ -31,7 +31,7 @@ class InlineResponse20025(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'match_id': 'float',
+        'match_id': 'int',
         'cluster': 'float',
         'replay_salt': 'float'
     }
@@ -65,7 +65,7 @@ class InlineResponse20025(object):
         match_id
 
         :return: The match_id of this InlineResponse20025.
-        :rtype: float
+        :rtype: int
         """
         return self._match_id
 
@@ -76,7 +76,7 @@ class InlineResponse20025(object):
         match_id
 
         :param match_id: The match_id of this InlineResponse20025.
-        :type: float
+        :type: int
         """
 
         self._match_id = match_id

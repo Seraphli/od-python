@@ -33,8 +33,8 @@ class InlineResponse20024(object):
     swagger_types = {
         'team_id': 'float',
         'rating': 'float',
-        'wins': 'float',
-        'losses': 'float',
+        'wins': 'int',
+        'losses': 'int',
         'last_match_time': 'float',
         'name': 'str',
         'tag': 'str'
@@ -131,7 +131,7 @@ class InlineResponse20024(object):
         The number of games won by this team
 
         :return: The wins of this InlineResponse20024.
-        :rtype: float
+        :rtype: int
         """
         return self._wins
 
@@ -142,7 +142,7 @@ class InlineResponse20024(object):
         The number of games won by this team
 
         :param wins: The wins of this InlineResponse20024.
-        :type: float
+        :type: int
         """
 
         self._wins = wins
@@ -154,7 +154,7 @@ class InlineResponse20024(object):
         The number of losses by this team
 
         :return: The losses of this InlineResponse20024.
-        :rtype: float
+        :rtype: int
         """
         return self._losses
 
@@ -165,7 +165,7 @@ class InlineResponse20024(object):
         The number of losses by this team
 
         :param losses: The losses of this InlineResponse20024.
-        :type: float
+        :type: int
         """
 
         self._losses = losses

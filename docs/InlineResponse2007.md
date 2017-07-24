@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_id** | **float** | account_id | [optional] 
+**account_id** | **int** | account_id | [optional] 
 **name** | **str** | name | [optional] 
 **country_code** | **str** | country_code | [optional] 
 **fantasy_role** | **float** | fantasy_role | [optional] 

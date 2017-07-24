@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_id** | **float** | account_id | [optional] 
+**account_id** | **int** | account_id | [optional] 
 **avatarfull** | **str** | avatarfull | [optional] 
 **personaname** | **str** | personaname | [optional] 
 **similarity** | **float** | similarity | [optional] 

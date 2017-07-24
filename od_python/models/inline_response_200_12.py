@@ -31,8 +31,8 @@ class InlineResponse20012(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'account_id': 'float',
-        'match_id': 'float',
+        'account_id': 'int',
+        'match_id': 'int',
         'solo_competitive_rank': 'float',
         'competitive_rank': 'float'
     }
@@ -70,7 +70,7 @@ class InlineResponse20012(object):
         account_id
 
         :return: The account_id of this InlineResponse20012.
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -81,7 +81,7 @@ class InlineResponse20012(object):
         account_id
 
         :param account_id: The account_id of this InlineResponse20012.
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id
@@ -93,7 +93,7 @@ class InlineResponse20012(object):
         match_id
 
         :return: The match_id of this InlineResponse20012.
-        :rtype: float
+        :rtype: int
         """
         return self._match_id
 
@@ -104,7 +104,7 @@ class InlineResponse20012(object):
         match_id
 
         :param match_id: The match_id of this InlineResponse20012.
-        :type: float
+        :type: int
         """
 
         self._match_id = match_id

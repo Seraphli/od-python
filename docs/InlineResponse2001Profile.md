@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_id** | **float** | account_id | [optional] 
+**account_id** | **int** | account_id | [optional] 
 **personaname** | **str** | personaname | [optional] 
 **name** | **str** | name | [optional] 
 **cheese** | **float** | cheese | [optional] 

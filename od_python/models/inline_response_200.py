@@ -31,37 +31,37 @@ class InlineResponse200(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'match_id': 'float',
-        'barracks_status_dire': 'float',
-        'barracks_status_radiant': 'float',
+        'match_id': 'int',
+        'barracks_status_dire': 'int',
+        'barracks_status_radiant': 'int',
         'chat': 'list[InlineResponse200Chat]',
-        'cluster': 'float',
+        'cluster': 'int',
         'cosmetics': 'object',
-        'dire_score': 'float',
-        'duration': 'float',
-        'engine': 'float',
-        'first_blood_time': 'float',
-        'game_mode': 'float',
-        'human_players': 'float',
-        'leagueid': 'float',
-        'lobby_type': 'float',
-        'match_seq_num': 'float',
-        'negative_votes': 'float',
+        'dire_score': 'int',
+        'duration': 'int',
+        'engine': 'int',
+        'first_blood_time': 'int',
+        'game_mode': 'int',
+        'human_players': 'int',
+        'leagueid': 'int',
+        'lobby_type': 'int',
+        'match_seq_num': 'int',
+        'negative_votes': 'int',
         'objectives': 'object',
         'picks_bans': 'object',
-        'positive_votes': 'float',
+        'positive_votes': 'int',
         'radiant_gold_adv': 'object',
-        'radiant_score': 'float',
+        'radiant_score': 'int',
         'radiant_win': 'bool',
         'radiant_xp_adv': 'object',
-        'start_time': 'float',
+        'start_time': 'int',
         'teamfights': 'object',
-        'tower_status_dire': 'float',
-        'tower_status_radiant': 'float',
+        'tower_status_dire': 'int',
+        'tower_status_radiant': 'int',
         'version': 'float',
-        'replay_salt': 'float',
-        'series_id': 'float',
-        'series_type': 'float',
+        'replay_salt': 'int',
+        'series_id': 'int',
+        'series_type': 'int',
         'radiant_team': 'object',
         'dire_team': 'object',
         'league': 'object',
@@ -71,8 +71,8 @@ class InlineResponse200(object):
         'region': 'float',
         'all_word_counts': 'object',
         'my_word_counts': 'object',
-        'throw': 'float',
-        'loss': 'float',
+        'throw': 'int',
+        'loss': 'int',
         'replay_url': 'str'
     }
 
@@ -265,7 +265,7 @@ class InlineResponse200(object):
         match_id
 
         :return: The match_id of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._match_id
 
@@ -276,7 +276,7 @@ class InlineResponse200(object):
         match_id
 
         :param match_id: The match_id of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._match_id = match_id
@@ -288,7 +288,7 @@ class InlineResponse200(object):
         barracks_status_dire
 
         :return: The barracks_status_dire of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._barracks_status_dire
 
@@ -299,7 +299,7 @@ class InlineResponse200(object):
         barracks_status_dire
 
         :param barracks_status_dire: The barracks_status_dire of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._barracks_status_dire = barracks_status_dire
@@ -311,7 +311,7 @@ class InlineResponse200(object):
         barracks_status_radiant
 
         :return: The barracks_status_radiant of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._barracks_status_radiant
 
@@ -322,7 +322,7 @@ class InlineResponse200(object):
         barracks_status_radiant
 
         :param barracks_status_radiant: The barracks_status_radiant of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._barracks_status_radiant = barracks_status_radiant
@@ -357,7 +357,7 @@ class InlineResponse200(object):
         cluster
 
         :return: The cluster of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._cluster
 
@@ -368,7 +368,7 @@ class InlineResponse200(object):
         cluster
 
         :param cluster: The cluster of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._cluster = cluster
@@ -403,7 +403,7 @@ class InlineResponse200(object):
         dire_score
 
         :return: The dire_score of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._dire_score
 
@@ -414,7 +414,7 @@ class InlineResponse200(object):
         dire_score
 
         :param dire_score: The dire_score of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._dire_score = dire_score
@@ -426,7 +426,7 @@ class InlineResponse200(object):
         duration
 
         :return: The duration of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._duration
 
@@ -437,7 +437,7 @@ class InlineResponse200(object):
         duration
 
         :param duration: The duration of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._duration = duration
@@ -449,7 +449,7 @@ class InlineResponse200(object):
         engine
 
         :return: The engine of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._engine
 
@@ -460,7 +460,7 @@ class InlineResponse200(object):
         engine
 
         :param engine: The engine of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._engine = engine
@@ -472,7 +472,7 @@ class InlineResponse200(object):
         first_blood_time
 
         :return: The first_blood_time of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._first_blood_time
 
@@ -483,7 +483,7 @@ class InlineResponse200(object):
         first_blood_time
 
         :param first_blood_time: The first_blood_time of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._first_blood_time = first_blood_time
@@ -495,7 +495,7 @@ class InlineResponse200(object):
         game_mode
 
         :return: The game_mode of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._game_mode
 
@@ -506,7 +506,7 @@ class InlineResponse200(object):
         game_mode
 
         :param game_mode: The game_mode of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._game_mode = game_mode
@@ -518,7 +518,7 @@ class InlineResponse200(object):
         human_players
 
         :return: The human_players of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._human_players
 
@@ -529,7 +529,7 @@ class InlineResponse200(object):
         human_players
 
         :param human_players: The human_players of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._human_players = human_players
@@ -541,7 +541,7 @@ class InlineResponse200(object):
         leagueid
 
         :return: The leagueid of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._leagueid
 
@@ -552,7 +552,7 @@ class InlineResponse200(object):
         leagueid
 
         :param leagueid: The leagueid of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._leagueid = leagueid
@@ -564,7 +564,7 @@ class InlineResponse200(object):
         lobby_type
 
         :return: The lobby_type of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._lobby_type
 
@@ -575,7 +575,7 @@ class InlineResponse200(object):
         lobby_type
 
         :param lobby_type: The lobby_type of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._lobby_type = lobby_type
@@ -587,7 +587,7 @@ class InlineResponse200(object):
         match_seq_num
 
         :return: The match_seq_num of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._match_seq_num
 
@@ -598,7 +598,7 @@ class InlineResponse200(object):
         match_seq_num
 
         :param match_seq_num: The match_seq_num of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._match_seq_num = match_seq_num
@@ -610,7 +610,7 @@ class InlineResponse200(object):
         negative_votes
 
         :return: The negative_votes of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._negative_votes
 
@@ -621,7 +621,7 @@ class InlineResponse200(object):
         negative_votes
 
         :param negative_votes: The negative_votes of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._negative_votes = negative_votes
@@ -679,7 +679,7 @@ class InlineResponse200(object):
         positive_votes
 
         :return: The positive_votes of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._positive_votes
 
@@ -690,7 +690,7 @@ class InlineResponse200(object):
         positive_votes
 
         :param positive_votes: The positive_votes of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._positive_votes = positive_votes
@@ -725,7 +725,7 @@ class InlineResponse200(object):
         radiant_score
 
         :return: The radiant_score of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._radiant_score
 
@@ -736,7 +736,7 @@ class InlineResponse200(object):
         radiant_score
 
         :param radiant_score: The radiant_score of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._radiant_score = radiant_score
@@ -794,7 +794,7 @@ class InlineResponse200(object):
         start_time
 
         :return: The start_time of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._start_time
 
@@ -805,7 +805,7 @@ class InlineResponse200(object):
         start_time
 
         :param start_time: The start_time of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._start_time = start_time
@@ -840,7 +840,7 @@ class InlineResponse200(object):
         tower_status_dire
 
         :return: The tower_status_dire of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._tower_status_dire
 
@@ -851,7 +851,7 @@ class InlineResponse200(object):
         tower_status_dire
 
         :param tower_status_dire: The tower_status_dire of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._tower_status_dire = tower_status_dire
@@ -863,7 +863,7 @@ class InlineResponse200(object):
         tower_status_radiant
 
         :return: The tower_status_radiant of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._tower_status_radiant
 
@@ -874,7 +874,7 @@ class InlineResponse200(object):
         tower_status_radiant
 
         :param tower_status_radiant: The tower_status_radiant of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._tower_status_radiant = tower_status_radiant
@@ -909,7 +909,7 @@ class InlineResponse200(object):
         replay_salt
 
         :return: The replay_salt of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._replay_salt
 
@@ -920,7 +920,7 @@ class InlineResponse200(object):
         replay_salt
 
         :param replay_salt: The replay_salt of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._replay_salt = replay_salt
@@ -932,7 +932,7 @@ class InlineResponse200(object):
         series_id
 
         :return: The series_id of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._series_id
 
@@ -943,7 +943,7 @@ class InlineResponse200(object):
         series_id
 
         :param series_id: The series_id of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._series_id = series_id
@@ -955,7 +955,7 @@ class InlineResponse200(object):
         series_type
 
         :return: The series_type of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._series_type
 
@@ -966,7 +966,7 @@ class InlineResponse200(object):
         series_type
 
         :param series_type: The series_type of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._series_type = series_type
@@ -1185,7 +1185,7 @@ class InlineResponse200(object):
         throw
 
         :return: The throw of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._throw
 
@@ -1196,7 +1196,7 @@ class InlineResponse200(object):
         throw
 
         :param throw: The throw of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._throw = throw
@@ -1208,7 +1208,7 @@ class InlineResponse200(object):
         loss
 
         :return: The loss of this InlineResponse200.
-        :rtype: float
+        :rtype: int
         """
         return self._loss
 
@@ -1219,7 +1219,7 @@ class InlineResponse200(object):
         loss
 
         :param loss: The loss of this InlineResponse200.
-        :type: float
+        :type: int
         """
 
         self._loss = loss

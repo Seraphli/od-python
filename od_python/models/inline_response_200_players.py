@@ -31,17 +31,17 @@ class InlineResponse200Players(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'match_id': 'float',
+        'match_id': 'int',
         'player_slot': 'float',
         'ability_upgrades_arr': 'list[int]',
         'ability_uses': 'object',
-        'account_id': 'float',
+        'account_id': 'int',
         'actions': 'object',
         'additional_units': 'object',
-        'assists': 'float',
-        'backpack_0': 'float',
-        'backpack_1': 'float',
-        'backpack_2': 'float',
+        'assists': 'int',
+        'backpack_0': 'int',
+        'backpack_1': 'int',
+        'backpack_2': 'int',
         'buyback_log': 'list[InlineResponse200BuybackLog]',
         'camps_stacked': 'float',
         'creeps_stacked': 'float',
@@ -49,34 +49,34 @@ class InlineResponse200Players(object):
         'damage_inflictor': 'object',
         'damage_inflictor_received': 'object',
         'damage_taken': 'object',
-        'deaths': 'float',
-        'denies': 'float',
+        'deaths': 'int',
+        'denies': 'int',
         'dn_t': 'list[int]',
-        'gold': 'float',
+        'gold': 'int',
         'gold_per_min': 'float',
         'gold_reasons': 'object',
-        'gold_spent': 'float',
+        'gold_spent': 'int',
         'gold_t': 'list[int]',
         'hero_damage': 'float',
         'hero_healing': 'float',
         'hero_hits': 'object',
-        'hero_id': 'float',
-        'item_0': 'float',
-        'item_1': 'float',
-        'item_2': 'float',
-        'item_3': 'float',
-        'item_4': 'float',
-        'item_5': 'float',
+        'hero_id': 'int',
+        'item_0': 'int',
+        'item_1': 'int',
+        'item_2': 'int',
+        'item_3': 'int',
+        'item_4': 'int',
+        'item_5': 'int',
         'item_uses': 'object',
         'kill_streaks': 'object',
         'killed': 'object',
         'killed_by': 'object',
-        'kills': 'float',
+        'kills': 'int',
         'kills_log': 'list[InlineResponse200KillsLog]',
         'lane_pos': 'object',
-        'last_hits': 'float',
+        'last_hits': 'int',
         'leaver_status': 'float',
-        'level': 'float',
+        'level': 'int',
         'lh_t': 'list[int]',
         'life_state': 'object',
         'max_hero_hit': 'object',
@@ -90,8 +90,8 @@ class InlineResponse200Players(object):
         'pings': 'float',
         'purchase': 'object',
         'purchase_log': 'list[InlineResponse200KillsLog]',
-        'rune_pickups': 'float',
-        'runes': 'list[dict(str, str)]',
+        'rune_pickups': 'int',
+        'runes': 'dict(str, int)',
         'runes_log': 'list[InlineResponse200RunesLog]',
         'sen': 'object',
         'sen_left_log': 'list[object]',
@@ -99,14 +99,14 @@ class InlineResponse200Players(object):
         'sen_placed': 'float',
         'stuns': 'float',
         'times': 'list[int]',
-        'tower_damage': 'float',
+        'tower_damage': 'int',
         'xp_per_min': 'float',
         'xp_reasons': 'object',
         'xp_t': 'list[int]',
         'personaname': 'str',
         'name': 'str',
         'radiant_win': 'bool',
-        'start_time': 'float',
+        'start_time': 'int',
         'duration': 'float',
         'cluster': 'float',
         'lobby_type': 'float',
@@ -114,26 +114,26 @@ class InlineResponse200Players(object):
         'patch': 'float',
         'region': 'float',
         'is_radiant': 'bool',
-        'win': 'float',
-        'lose': 'float',
-        'total_gold': 'float',
+        'win': 'int',
+        'lose': 'int',
+        'total_gold': 'int',
         'total_xp': 'float',
         'kills_per_min': 'float',
         'kda': 'float',
         'abandons': 'float',
-        'neutral_kills': 'float',
-        'tower_kills': 'float',
-        'courier_kills': 'float',
-        'lane_kills': 'float',
-        'hero_kills': 'float',
-        'observer_kills': 'float',
-        'sentry_kills': 'float',
-        'roshan_kills': 'float',
-        'necronomicon_kills': 'float',
-        'ancient_kills': 'float',
-        'buyback_count': 'float',
-        'observer_uses': 'float',
-        'sentry_uses': 'float',
+        'neutral_kills': 'int',
+        'tower_kills': 'int',
+        'courier_kills': 'int',
+        'lane_kills': 'int',
+        'hero_kills': 'int',
+        'observer_kills': 'int',
+        'sentry_kills': 'int',
+        'roshan_kills': 'int',
+        'necronomicon_kills': 'int',
+        'ancient_kills': 'int',
+        'buyback_count': 'int',
+        'observer_uses': 'int',
+        'sentry_uses': 'int',
         'lane_efficiency': 'float',
         'lane_efficiency_pct': 'float',
         'lane': 'float',
@@ -640,7 +640,7 @@ class InlineResponse200Players(object):
         match_id
 
         :return: The match_id of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._match_id
 
@@ -651,7 +651,7 @@ class InlineResponse200Players(object):
         match_id
 
         :param match_id: The match_id of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._match_id = match_id
@@ -732,7 +732,7 @@ class InlineResponse200Players(object):
         account_id
 
         :return: The account_id of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._account_id
 
@@ -743,7 +743,7 @@ class InlineResponse200Players(object):
         account_id
 
         :param account_id: The account_id of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._account_id = account_id
@@ -801,7 +801,7 @@ class InlineResponse200Players(object):
         assists
 
         :return: The assists of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._assists
 
@@ -812,7 +812,7 @@ class InlineResponse200Players(object):
         assists
 
         :param assists: The assists of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._assists = assists
@@ -824,7 +824,7 @@ class InlineResponse200Players(object):
         backpack_0
 
         :return: The backpack_0 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._backpack_0
 
@@ -835,7 +835,7 @@ class InlineResponse200Players(object):
         backpack_0
 
         :param backpack_0: The backpack_0 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._backpack_0 = backpack_0
@@ -847,7 +847,7 @@ class InlineResponse200Players(object):
         backpack_1
 
         :return: The backpack_1 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._backpack_1
 
@@ -858,7 +858,7 @@ class InlineResponse200Players(object):
         backpack_1
 
         :param backpack_1: The backpack_1 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._backpack_1 = backpack_1
@@ -870,7 +870,7 @@ class InlineResponse200Players(object):
         backpack_2
 
         :return: The backpack_2 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._backpack_2
 
@@ -881,7 +881,7 @@ class InlineResponse200Players(object):
         backpack_2
 
         :param backpack_2: The backpack_2 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._backpack_2 = backpack_2
@@ -1054,7 +1054,7 @@ class InlineResponse200Players(object):
         deaths
 
         :return: The deaths of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._deaths
 
@@ -1065,7 +1065,7 @@ class InlineResponse200Players(object):
         deaths
 
         :param deaths: The deaths of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._deaths = deaths
@@ -1077,7 +1077,7 @@ class InlineResponse200Players(object):
         denies
 
         :return: The denies of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._denies
 
@@ -1088,7 +1088,7 @@ class InlineResponse200Players(object):
         denies
 
         :param denies: The denies of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._denies = denies
@@ -1123,7 +1123,7 @@ class InlineResponse200Players(object):
         gold
 
         :return: The gold of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._gold
 
@@ -1134,7 +1134,7 @@ class InlineResponse200Players(object):
         gold
 
         :param gold: The gold of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._gold = gold
@@ -1192,7 +1192,7 @@ class InlineResponse200Players(object):
         gold_spent
 
         :return: The gold_spent of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._gold_spent
 
@@ -1203,7 +1203,7 @@ class InlineResponse200Players(object):
         gold_spent
 
         :param gold_spent: The gold_spent of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._gold_spent = gold_spent
@@ -1307,7 +1307,7 @@ class InlineResponse200Players(object):
         hero_id
 
         :return: The hero_id of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._hero_id
 
@@ -1318,7 +1318,7 @@ class InlineResponse200Players(object):
         hero_id
 
         :param hero_id: The hero_id of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._hero_id = hero_id
@@ -1330,7 +1330,7 @@ class InlineResponse200Players(object):
         item_0
 
         :return: The item_0 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._item_0
 
@@ -1341,7 +1341,7 @@ class InlineResponse200Players(object):
         item_0
 
         :param item_0: The item_0 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._item_0 = item_0
@@ -1353,7 +1353,7 @@ class InlineResponse200Players(object):
         item_1
 
         :return: The item_1 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._item_1
 
@@ -1364,7 +1364,7 @@ class InlineResponse200Players(object):
         item_1
 
         :param item_1: The item_1 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._item_1 = item_1
@@ -1376,7 +1376,7 @@ class InlineResponse200Players(object):
         item_2
 
         :return: The item_2 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._item_2
 
@@ -1387,7 +1387,7 @@ class InlineResponse200Players(object):
         item_2
 
         :param item_2: The item_2 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._item_2 = item_2
@@ -1399,7 +1399,7 @@ class InlineResponse200Players(object):
         item_3
 
         :return: The item_3 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._item_3
 
@@ -1410,7 +1410,7 @@ class InlineResponse200Players(object):
         item_3
 
         :param item_3: The item_3 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._item_3 = item_3
@@ -1422,7 +1422,7 @@ class InlineResponse200Players(object):
         item_4
 
         :return: The item_4 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._item_4
 
@@ -1433,7 +1433,7 @@ class InlineResponse200Players(object):
         item_4
 
         :param item_4: The item_4 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._item_4 = item_4
@@ -1445,7 +1445,7 @@ class InlineResponse200Players(object):
         item_5
 
         :return: The item_5 of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._item_5
 
@@ -1456,7 +1456,7 @@ class InlineResponse200Players(object):
         item_5
 
         :param item_5: The item_5 of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._item_5 = item_5
@@ -1560,7 +1560,7 @@ class InlineResponse200Players(object):
         kills
 
         :return: The kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._kills
 
@@ -1571,7 +1571,7 @@ class InlineResponse200Players(object):
         kills
 
         :param kills: The kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._kills = kills
@@ -1629,7 +1629,7 @@ class InlineResponse200Players(object):
         last_hits
 
         :return: The last_hits of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._last_hits
 
@@ -1640,7 +1640,7 @@ class InlineResponse200Players(object):
         last_hits
 
         :param last_hits: The last_hits of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._last_hits = last_hits
@@ -1675,7 +1675,7 @@ class InlineResponse200Players(object):
         level
 
         :return: The level of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._level
 
@@ -1686,7 +1686,7 @@ class InlineResponse200Players(object):
         level
 
         :param level: The level of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._level = level
@@ -1997,7 +1997,7 @@ class InlineResponse200Players(object):
         rune_pickups
 
         :return: The rune_pickups of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._rune_pickups
 
@@ -2008,7 +2008,7 @@ class InlineResponse200Players(object):
         rune_pickups
 
         :param rune_pickups: The rune_pickups of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._rune_pickups = rune_pickups
@@ -2020,7 +2020,7 @@ class InlineResponse200Players(object):
         runes
 
         :return: The runes of this InlineResponse200Players.
-        :rtype: list[dict(str, str)]
+        :rtype: dict(str, int)
         """
         return self._runes
 
@@ -2031,7 +2031,7 @@ class InlineResponse200Players(object):
         runes
 
         :param runes: The runes of this InlineResponse200Players.
-        :type: list[dict(str, str)]
+        :type: dict(str, int)
         """
 
         self._runes = runes
@@ -2204,7 +2204,7 @@ class InlineResponse200Players(object):
         tower_damage
 
         :return: The tower_damage of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._tower_damage
 
@@ -2215,7 +2215,7 @@ class InlineResponse200Players(object):
         tower_damage
 
         :param tower_damage: The tower_damage of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._tower_damage = tower_damage
@@ -2365,7 +2365,7 @@ class InlineResponse200Players(object):
         start_time
 
         :return: The start_time of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._start_time
 
@@ -2376,7 +2376,7 @@ class InlineResponse200Players(object):
         start_time
 
         :param start_time: The start_time of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._start_time = start_time
@@ -2549,7 +2549,7 @@ class InlineResponse200Players(object):
         win
 
         :return: The win of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._win
 
@@ -2560,7 +2560,7 @@ class InlineResponse200Players(object):
         win
 
         :param win: The win of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._win = win
@@ -2572,7 +2572,7 @@ class InlineResponse200Players(object):
         win
 
         :return: The lose of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._lose
 
@@ -2583,7 +2583,7 @@ class InlineResponse200Players(object):
         win
 
         :param lose: The lose of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._lose = lose
@@ -2595,7 +2595,7 @@ class InlineResponse200Players(object):
         total_gold
 
         :return: The total_gold of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._total_gold
 
@@ -2606,7 +2606,7 @@ class InlineResponse200Players(object):
         total_gold
 
         :param total_gold: The total_gold of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._total_gold = total_gold
@@ -2710,7 +2710,7 @@ class InlineResponse200Players(object):
         neutral_kills
 
         :return: The neutral_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._neutral_kills
 
@@ -2721,7 +2721,7 @@ class InlineResponse200Players(object):
         neutral_kills
 
         :param neutral_kills: The neutral_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._neutral_kills = neutral_kills
@@ -2733,7 +2733,7 @@ class InlineResponse200Players(object):
         tower_kills
 
         :return: The tower_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._tower_kills
 
@@ -2744,7 +2744,7 @@ class InlineResponse200Players(object):
         tower_kills
 
         :param tower_kills: The tower_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._tower_kills = tower_kills
@@ -2756,7 +2756,7 @@ class InlineResponse200Players(object):
         courier_kills
 
         :return: The courier_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._courier_kills
 
@@ -2767,7 +2767,7 @@ class InlineResponse200Players(object):
         courier_kills
 
         :param courier_kills: The courier_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._courier_kills = courier_kills
@@ -2779,7 +2779,7 @@ class InlineResponse200Players(object):
         lane_kills
 
         :return: The lane_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._lane_kills
 
@@ -2790,7 +2790,7 @@ class InlineResponse200Players(object):
         lane_kills
 
         :param lane_kills: The lane_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._lane_kills = lane_kills
@@ -2802,7 +2802,7 @@ class InlineResponse200Players(object):
         hero_kills
 
         :return: The hero_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._hero_kills
 
@@ -2813,7 +2813,7 @@ class InlineResponse200Players(object):
         hero_kills
 
         :param hero_kills: The hero_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._hero_kills = hero_kills
@@ -2825,7 +2825,7 @@ class InlineResponse200Players(object):
         observer_kills
 
         :return: The observer_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._observer_kills
 
@@ -2836,7 +2836,7 @@ class InlineResponse200Players(object):
         observer_kills
 
         :param observer_kills: The observer_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._observer_kills = observer_kills
@@ -2848,7 +2848,7 @@ class InlineResponse200Players(object):
         sentry_kills
 
         :return: The sentry_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._sentry_kills
 
@@ -2859,7 +2859,7 @@ class InlineResponse200Players(object):
         sentry_kills
 
         :param sentry_kills: The sentry_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._sentry_kills = sentry_kills
@@ -2871,7 +2871,7 @@ class InlineResponse200Players(object):
         roshan_kills
 
         :return: The roshan_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._roshan_kills
 
@@ -2882,7 +2882,7 @@ class InlineResponse200Players(object):
         roshan_kills
 
         :param roshan_kills: The roshan_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._roshan_kills = roshan_kills
@@ -2894,7 +2894,7 @@ class InlineResponse200Players(object):
         necronomicon_kills
 
         :return: The necronomicon_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._necronomicon_kills
 
@@ -2905,7 +2905,7 @@ class InlineResponse200Players(object):
         necronomicon_kills
 
         :param necronomicon_kills: The necronomicon_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._necronomicon_kills = necronomicon_kills
@@ -2917,7 +2917,7 @@ class InlineResponse200Players(object):
         ancient_kills
 
         :return: The ancient_kills of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._ancient_kills
 
@@ -2928,7 +2928,7 @@ class InlineResponse200Players(object):
         ancient_kills
 
         :param ancient_kills: The ancient_kills of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._ancient_kills = ancient_kills
@@ -2940,7 +2940,7 @@ class InlineResponse200Players(object):
         buyback_count
 
         :return: The buyback_count of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._buyback_count
 
@@ -2951,7 +2951,7 @@ class InlineResponse200Players(object):
         buyback_count
 
         :param buyback_count: The buyback_count of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._buyback_count = buyback_count
@@ -2963,7 +2963,7 @@ class InlineResponse200Players(object):
         observer_uses
 
         :return: The observer_uses of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._observer_uses
 
@@ -2974,7 +2974,7 @@ class InlineResponse200Players(object):
         observer_uses
 
         :param observer_uses: The observer_uses of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._observer_uses = observer_uses
@@ -2986,7 +2986,7 @@ class InlineResponse200Players(object):
         sentry_uses
 
         :return: The sentry_uses of this InlineResponse200Players.
-        :rtype: float
+        :rtype: int
         """
         return self._sentry_uses
 
@@ -2997,7 +2997,7 @@ class InlineResponse200Players(object):
         sentry_uses
 
         :param sentry_uses: The sentry_uses of this InlineResponse200Players.
-        :type: float
+        :type: int
         """
 
         self._sentry_uses = sentry_uses

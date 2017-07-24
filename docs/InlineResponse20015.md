@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**match_id** | **float** | match_id | [optional] 
+**match_id** | **int** | match_id | [optional] 
 **match_seq_num** | **float** | match_seq_num | [optional] 
 **radiant_win** | **float** | radiant_win | [optional] 
 **start_time** | **float** | start_time | [optional] 

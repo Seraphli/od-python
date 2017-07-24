@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_id** | **str** | account_id | [optional] 
+**account_id** | **int** | account_id | [optional] 
 **score** | **str** | score | [optional] 
 **steamid** | **str** | steamid | [optional] 
 **avatar** | **str** | avatar | [optional] 
