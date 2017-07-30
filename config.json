@@ -1,4 +1,5 @@
 {
   "packageName": "od_python",
-  "projectName": "od-python"
+  "projectName": "od-python",
+  "packageVersion": "1.0.1"
 }

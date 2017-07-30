@@ -5,7 +5,7 @@ This project is generated for OpenDota api using swagger.
 What I do:
 ```sh
 wget http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.2.3/swagger-codegen-cli-2.2.3.jar -O swagger-codegen-cli.jar
-java -jar swagger-codegen-cli.jar generate -i https://api.opendota.com/api -l python -o /tmp/od-python/ --git-repo-id od-python --git-user-id seraphli --config config.json
+java -jar swagger-codegen-cli.jar generate -i https://api.opendota.com/api -l python -o ../od-python/ --git-repo-id od-python --git-user-id seraphli --config config.json
 ```
 
 **NB**: Recommend using python 3, unless you want to deal with ssl error.
