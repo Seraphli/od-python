@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **avatarfull** | **str** | avatarfull | [optional] 
 **profileurl** | **str** | profileurl | [optional] 
 **personaname** | **str** | personaname | [optional] 
-**cheese** | **float** | cheese | [optional] 
+**cheese** | **int** | cheese | [optional] 
 **fh_unavailable** | **bool** | fh_unavailable | [optional] 
 **loccountrycode** | **str** | loccountrycode | [optional] 
 **solo_competitive_rank** | **str** | solo_competitive_rank | [optional] 

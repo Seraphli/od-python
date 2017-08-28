@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**bin** | **float** | bin | [optional] 
-**bin_name** | **float** | bin_name | [optional] 
-**count** | **float** | count | [optional] 
-**cumulative_sum** | **float** | cumulative_sum | [optional] 
+**bin** | **int** | bin | [optional] 
+**bin_name** | **int** | bin_name | [optional] 
+**count** | **int** | count | [optional] 
+**cumulative_sum** | **int** | cumulative_sum | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

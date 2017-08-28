@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 **account_id** | **int** | account_id | [optional] 
 **personaname** | **str** | personaname | [optional] 
 **name** | **str** | name | [optional] 
-**cheese** | **float** | cheese | [optional] 
+**cheese** | **int** | cheese | [optional] 
 **steamid** | **str** | steamid | [optional] 
 **avatar** | **str** | avatar | [optional] 
 **avatarmedium** | **str** | avatarmedium | [optional] 

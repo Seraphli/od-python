@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **commmand** | **str** | command | [optional] 
-**row_count** | **float** | rowCount | [optional] 
+**row_count** | **int** | rowCount | [optional] 
 **rows** | [**list[InlineResponse20018MmrRows]**](InlineResponse20018MmrRows.md) | rows | [optional] 
 **fields** | [**list[InlineResponse20018MmrFields]**](InlineResponse20018MmrFields.md) | fields | [optional] 
 **row_as_array** | **bool** | rowAsArray | [optional] 

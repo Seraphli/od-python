@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**leagueid** | **float** | leagueid | [optional] 
+**leagueid** | **int** | leagueid | [optional] 
 **ticket** | **str** | ticket | [optional] 
 **banner** | **str** | banner | [optional] 
 **tier** | **str** | tier | [optional] 

@@ -19,11 +19,11 @@ import unittest
 
 import od_python
 from od_python.rest import ApiException
-from od_python.models.inline_response_200_16 import InlineResponse20016
+from od_python.models.inline_response_200_18_country_mmr_fields import InlineResponse20018CountryMmrFields
 
 
-class TestInlineResponse20016(unittest.TestCase):
-    """ InlineResponse20016 unit test stubs """
+class TestInlineResponse20018CountryMmrFields(unittest.TestCase):
+    """ InlineResponse20018CountryMmrFields unit test stubs """
 
     def setUp(self):
         pass
@@ -31,12 +31,12 @@ class TestInlineResponse20016(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testInlineResponse20016(self):
+    def testInlineResponse20018CountryMmrFields(self):
         """
-        Test InlineResponse20016
+        Test InlineResponse20018CountryMmrFields
         """
         # FIXME: construct object with mandatory attributes with example values
-        #model = od_python.models.inline_response_200_16.InlineResponse20016()
+        #model = od_python.models.inline_response_200_18_country_mmr_fields.InlineResponse20018CountryMmrFields()
         pass
 
 

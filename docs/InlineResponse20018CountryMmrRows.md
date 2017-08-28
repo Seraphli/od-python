@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **loccountrycode** | **str** | loccountrycode | [optional] 
-**count** | **float** | count | [optional] 
+**count** | **int** | count | [optional] 
 **avg** | **str** | avg | [optional] 
 **common** | **str** | common | [optional] 
 
