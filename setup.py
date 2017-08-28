@@ -15,7 +15,7 @@ import sys
 from setuptools import setup, find_packages
 
 NAME = "od-python"
-VERSION = "1.0.0"
+VERSION = "1.0.2"
 # To install the library, run the following
 #
 # python setup.py install
@@ -30,7 +30,7 @@ setup(
     version=VERSION,
     description="OpenDota API",
     author_email="",
-    url="",
+    url="https://github.com/Seraphli/od-python",
     keywords=["Swagger", "OpenDota API"],
     install_requires=REQUIRES,
     packages=find_packages(),

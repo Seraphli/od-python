@@ -1,5 +1,6 @@
 {
   "packageName": "od_python",
   "projectName": "od-python",
-  "packageVersion": "1.0.1"
+  "packageVersion": "1.0.2",
+  "packageUrl": "https://github.com/Seraphli/od-python"
 }
