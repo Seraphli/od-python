@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **metadata_get**
-> InlineResponse20017 metadata_get()
+> InlineResponse20016 metadata_get()
 
 GET /metadata
 
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20017**](InlineResponse20017.md)
+[**InlineResponse20016**](InlineResponse20016.md)
 
 ### Authorization
 

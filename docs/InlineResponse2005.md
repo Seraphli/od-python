@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**hero_id** | **int** | hero_id | [optional] 
+**hero_id** | **int** |  | [optional] 
 **last_played** | **int** | last_played | [optional] 
 **games** | **int** | games | [optional] 
 **win** | **int** | win | [optional] 

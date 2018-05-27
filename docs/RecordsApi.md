@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **records_field_get**
-> list[InlineResponse20026] records_field_get(field)
+> list[InlineResponse20029] records_field_get(field)
 
 GET /records/{field}
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse20026]**](InlineResponse20026.md)
+[**list[InlineResponse20029]**](InlineResponse20029.md)
 
 ### Authorization
 

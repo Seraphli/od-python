@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **benchmarks_get**
-> InlineResponse20021 benchmarks_get(hero_id)
+> InlineResponse20020 benchmarks_get(hero_id)
 
 GET /benchmarks
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20021**](InlineResponse20021.md)
+[**InlineResponse20020**](InlineResponse20020.md)
 
 ### Authorization
 

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **hero_stats_get**
-> list[InlineResponse20016] hero_stats_get()
+> list[InlineResponse20022] hero_stats_get()
 
 GET /heroStats
 
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse20016]**](InlineResponse20016.md)
+[**list[InlineResponse20022]**](InlineResponse20022.md)
 
 ### Authorization
 

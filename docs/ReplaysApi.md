@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **replays_get**
-> list[InlineResponse20025] replays_get(match_id)
+> list[InlineResponse20028] replays_get(match_id)
 
 GET /replays
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**list[InlineResponse20025]**](InlineResponse20025.md)
+[**list[InlineResponse20028]**](InlineResponse20028.md)
 
 ### Authorization
 

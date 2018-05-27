@@ -5,11 +5,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **match_id** | **int** | match_id | [optional] 
 **match_seq_num** | **int** | match_seq_num | [optional] 
-**radiant_win** | **bool** | radiant_win | [optional] 
+**radiant_win** | **bool** | Boolean indicating whether Radiant won the match | [optional] 
 **start_time** | **int** | start_time | [optional] 
-**duration** | **int** | duration | [optional] 
-**avg_mmr** | **int** | avg_mmr | [optional] 
-**num_mmr** | **int** | num_mmr | [optional] 
+**duration** | **int** | Duration of the game in seconds | [optional] 
 **radiant_team** | **str** | radiant_team | [optional] 
 **dire_team** | **str** | dire_team | [optional] 
 

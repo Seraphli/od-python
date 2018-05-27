@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **personaname** | **str** | personaname | [optional] 
 **last_login** | **str** | last_login | [optional] 
 **avatar** | **str** | avatar | [optional] 
+**avatarfull** | **str** | avatarfull | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

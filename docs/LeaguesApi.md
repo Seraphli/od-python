@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **leagues_get**
-> list[InlineResponse20023] leagues_get()
+> list[InlineResponse20024] leagues_get()
 
 GET /leagues
 
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse20023]**](InlineResponse20023.md)
+[**list[InlineResponse20024]**](InlineResponse20024.md)
 
 ### Authorization
 

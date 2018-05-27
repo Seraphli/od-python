@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **rankings_get**
-> InlineResponse20020 rankings_get(hero_id)
+> InlineResponse20019 rankings_get(hero_id)
 
 GET /rankings
 
@@ -42,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponse20020**](InlineResponse20020.md)
+[**InlineResponse20019**](InlineResponse20019.md)
 
 ### Authorization
 

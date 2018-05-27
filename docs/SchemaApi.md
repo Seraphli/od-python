@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **schema_get**
-> list[InlineResponse20027] schema_get()
+> list[InlineResponse20033] schema_get()
 
 GET /schema
 
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[InlineResponse20027]**](InlineResponse20027.md)
+[**list[InlineResponse20033]**](InlineResponse20033.md)
 
 ### Authorization
 

@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**win** | **int** | win | [optional] 
-**lose** | **int** | lose | [optional] 
+**win** | **int** | Number of wins | [optional] 
+**lose** | **int** | Number of loses | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

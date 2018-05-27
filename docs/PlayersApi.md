@@ -22,7 +22,7 @@ Method | HTTP request | Description
 
 
 # **players_account_id_counts_get**
-> InlineResponse2009 players_account_id_counts_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> InlineResponse2009 players_account_id_counts_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/counts
 
@@ -55,11 +55,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/counts
-    api_response = api_instance.players_account_id_counts_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_counts_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_counts_get: %s\n" % e)
@@ -86,6 +87,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -152,7 +154,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_heroes_get**
-> list[InlineResponse2005] players_account_id_heroes_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> list[InlineResponse2005] players_account_id_heroes_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/heroes
 
@@ -185,11 +187,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/heroes
-    api_response = api_instance.players_account_id_heroes_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_heroes_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_heroes_get: %s\n" % e)
@@ -216,6 +219,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -234,7 +238,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_histograms_field_get**
-> list[object] players_account_id_histograms_field_get(account_id, field, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> list[object] players_account_id_histograms_field_get(account_id, field, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/histograms
 
@@ -268,11 +272,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/histograms
-    api_response = api_instance.players_account_id_histograms_field_get(account_id, field, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_histograms_field_get(account_id, field, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_histograms_field_get: %s\n" % e)
@@ -300,6 +305,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -318,7 +324,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_matches_get**
-> list[InlineResponse2004] players_account_id_matches_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort, project=project)
+> list[InlineResponse2004] players_account_id_matches_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort, project=project)
 
 GET /players/{account_id}/matches
 
@@ -351,12 +357,13 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 project = 'project_example' # str | Fields to project (array) (optional)
 
 try: 
     # GET /players/{account_id}/matches
-    api_response = api_instance.players_account_id_matches_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort, project=project)
+    api_response = api_instance.players_account_id_matches_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort, project=project)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_matches_get: %s\n" % e)
@@ -383,6 +390,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
  **project** | **str**| Fields to project (array) | [optional] 
 
@@ -402,7 +410,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_peers_get**
-> list[InlineResponse2006] players_account_id_peers_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> list[InlineResponse2006] players_account_id_peers_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/peers
 
@@ -435,11 +443,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/peers
-    api_response = api_instance.players_account_id_peers_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_peers_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_peers_get: %s\n" % e)
@@ -466,6 +475,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -484,7 +494,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_pros_get**
-> list[InlineResponse2007] players_account_id_pros_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> list[InlineResponse2007] players_account_id_pros_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/pros
 
@@ -517,11 +527,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/pros
-    api_response = api_instance.players_account_id_pros_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_pros_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_pros_get: %s\n" % e)
@@ -548,6 +559,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -754,7 +766,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_totals_get**
-> list[InlineResponse2008] players_account_id_totals_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> list[InlineResponse2008] players_account_id_totals_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/totals
 
@@ -787,11 +799,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/totals
-    api_response = api_instance.players_account_id_totals_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_totals_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_totals_get: %s\n" % e)
@@ -818,6 +831,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -836,7 +850,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_wardmap_get**
-> InlineResponse20010 players_account_id_wardmap_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> InlineResponse20010 players_account_id_wardmap_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/wardmap
 
@@ -869,11 +883,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/wardmap
-    api_response = api_instance.players_account_id_wardmap_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_wardmap_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_wardmap_get: %s\n" % e)
@@ -900,6 +915,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -918,7 +934,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_wl_get**
-> InlineResponse2002 players_account_id_wl_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> InlineResponse2002 players_account_id_wl_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/wl
 
@@ -951,11 +967,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/wl
-    api_response = api_instance.players_account_id_wl_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_wl_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_wl_get: %s\n" % e)
@@ -982,6 +999,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type
@@ -1000,7 +1018,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **players_account_id_wordcloud_get**
-> InlineResponse20011 players_account_id_wordcloud_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+> InlineResponse20011 players_account_id_wordcloud_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
 
 GET /players/{account_id}/wordcloud
 
@@ -1033,11 +1051,12 @@ excluded_account_id = 56 # int | Account IDs not in the match (array) (optional)
 with_hero_id = 56 # int | Hero IDs on the player's team (array) (optional)
 against_hero_id = 56 # int | Hero IDs against the player's team (array) (optional)
 significant = 56 # int | Whether the match was significant for aggregation purposes (optional)
+having = 56 # int | The minimum number of games played, for filtering hero stats (optional)
 sort = 'sort_example' # str | The field to return matches sorted by in descending order (optional)
 
 try: 
     # GET /players/{account_id}/wordcloud
-    api_response = api_instance.players_account_id_wordcloud_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, sort=sort)
+    api_response = api_instance.players_account_id_wordcloud_get(account_id, limit=limit, offset=offset, win=win, patch=patch, game_mode=game_mode, lobby_type=lobby_type, region=region, date=date, lane_role=lane_role, hero_id=hero_id, is_radiant=is_radiant, included_account_id=included_account_id, excluded_account_id=excluded_account_id, with_hero_id=with_hero_id, against_hero_id=against_hero_id, significant=significant, having=having, sort=sort)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling PlayersApi->players_account_id_wordcloud_get: %s\n" % e)
@@ -1064,6 +1083,7 @@ Name | Type | Description  | Notes
  **with_hero_id** | **int**| Hero IDs on the player&#39;s team (array) | [optional] 
  **against_hero_id** | **int**| Hero IDs against the player&#39;s team (array) | [optional] 
  **significant** | **int**| Whether the match was significant for aggregation purposes | [optional] 
+ **having** | **int**| The minimum number of games played, for filtering hero stats | [optional] 
  **sort** | **str**| The field to return matches sorted by in descending order | [optional] 
 
 ### Return type

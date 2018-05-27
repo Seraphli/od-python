@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **distributions_get**
-> InlineResponse20018 distributions_get()
+> InlineResponse20017 distributions_get()
 
 GET /distributions
 
@@ -38,7 +38,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponse20018**](InlineResponse20018.md)
+[**InlineResponse20017**](InlineResponse20017.md)
 
 ### Authorization
 

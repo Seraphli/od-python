@@ -8,11 +8,11 @@ Method | HTTP request | Description
 
 
 # **search_get**
-> list[InlineResponse20019] search_get(q, similarity=similarity)
+> list[InlineResponse20018] search_get(q)
 
 GET /search
 
-Search players by personaname. Default similarity is 0.51
+Search players by personaname.
 
 ### Example 
 ```python
@@ -25,11 +25,10 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = od_python.SearchApi()
 q = 'q_example' # str | Search string
-similarity = 3.4 # float | Minimum similarity threshold, between 0 and 1 (optional)
 
 try: 
     # GET /search
-    api_response = api_instance.search_get(q, similarity=similarity)
+    api_response = api_instance.search_get(q)
     pprint(api_response)
 except ApiException as e:
     print("Exception when calling SearchApi->search_get: %s\n" % e)
@@ -40,11 +39,10 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **q** | **str**| Search string | 
- **similarity** | **float**| Minimum similarity threshold, between 0 and 1 | [optional] 
 
 ### Return type
 
-[**list[InlineResponse20019]**](InlineResponse20019.md)
+[**list[InlineResponse20018]**](InlineResponse20018.md)
 
 ### Authorization
 
